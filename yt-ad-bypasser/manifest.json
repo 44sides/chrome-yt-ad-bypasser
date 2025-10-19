@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Yt Ad Bypasser",
+  "version": "1.0",
+  "description": "YouTube clicker to bypass video ads through My Ad Center",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch*", "*://*.youtube.com/aboutthisad*"], 
+	  "js": ["clicker.js"],
+	  "all_frames": true,
+	  "run_at": "document_end"
+    }
+  ]
+}
